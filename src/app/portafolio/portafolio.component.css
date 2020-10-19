@@ -1,0 +1,75 @@
+body {
+    background: white;
+}
+
+header {
+    display: contents;
+}
+
+hr {
+    height: 10px;
+    width: 100%;
+    background-color: black;
+}
+
+h1 {
+    font-size: 25px;
+    font-family: Calibri;
+    margin-left: 5px;
+}
+
+h2 {
+    font-size: 20px;
+    font-family: Calibri;
+    color: rgb(223, 71, 16);
+    margin-left: 10px;
+    margin-bottom: 0px;
+}
+
+h3 {
+    font-size: 15px;
+    font-family: Calibri;
+    width: 100%;
+    font-weight: bold;
+    margin-left: 15px;
+    margin-bottom: 0px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-left: 5px;
+}
+
+
+/* Zebra striping */
+
+tr:nth-of-type(odd) {
+    background: #eee;
+}
+
+th {
+    background: #333;
+    color: white;
+    font-family: Calibri;
+}
+
+td,
+th {
+    padding: 6px;
+    border: 1px solid #ccc;
+    text-align: left;
+    font-family: Calibri;
+}
+
+#end {
+    margin-left: 15px;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    width: 100%;
+    font-family: Calibri;
+    font-size: 10px;
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head></head>
+
+<body>
+    <header>
+        <img src="../assets/img/principal.jpg" alt="imagen" width="100%" height="340px">
+    </header>
+    <hr>
+
+    <h1>Contacto</h1>
+
+    <div id='main'>
+        <article>
+            <h4>MINSAL</h4>
+            <p>
+                <strong>Dirección: </strong>Mac Iver 541, Santiago, Chile <br>
+                <strong>Teléfono: </strong>Teléfono: (+56 2) 2 5740 100 <br>
+                <strong>Twitter: </strong>Ministerio de Salud - @ministeriosalud <br>
+            </p>
+        </article>
+        <nav>
+            <img src="../assets/img/contacto.png" alt="contacto" width="180px" height="150px">
+        </nav>
+    </div>
+    <div id='form'>
+        <form action="/my-handling-form-page" method="post">
+
+            <fieldset>
+                <legend style="color:rgb(223, 71, 16);"><strong>
+                Formulario de contacto
+            </strong>
+                </legend>
+                <div>
+                    <ul style="list-style:none">
+                        <li>
+                            <div id='main2'>
+                                <label for="nom">Nombre completo</label>
+                                <input type="text" id="nom" name="nombre">
+                            </div>
+                        </li>
+                        <br>
+                        <li>
+                            <div id='main2'>
+                                <label for="mail">Correo</label>
+                                <input type="email" id="mail" name="mail">
+                            </div>
+                        </li>
+                        <br>
+                        <li>
+                            <div id='main2'>
+                                <label for="fono">Telefono</label>
+                                <input type="text" id="fono" name="telefono">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend style="color:rgb(223, 71, 16);"><strong>Tu mensaje</strong></legend>
+                <div>
+                    <ul style="list-style:none">
+                        <li>
+                            <div id='main2'>
+                                <label for="fono">Asunto</label>
+                                <input type="text" id="asunto" name="asunto">
+                            </div>
+                        </li>
+                        <br>
+                        <li>
+                            <div id='main2'>
+                                <label for="msg">Mensaje</label>
+                                <textarea id="msje" name="mensaje"></textarea>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </fieldset>
+        </form>
+        <br>
+        <button type="submit">Enviar</button>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <div id="end">
+        <a routerLink="/home">Home</a>&nbsp;&nbsp;
+        <a routerLink="/portafolio">Portafolio</a>&nbsp;&nbsp;
+        <a routerLink="/servicio">Servicio</a>&nbsp;&nbsp;
+        <a routerLink="/partners">Partners</a>&nbsp;&nbsp;
+        <a routerLink="/contacto">Contacto</a>&nbsp;&nbsp;
+        <a routerLink="/juego">Juego</a>&nbsp;&nbsp;
+
+    </div>
+    <br>
+    <footer>
+        &copy; Copyright 2020 Company. Derechos reservados
+
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+<mat-sidenav-container class="sidenav-container">
+    <mat-sidenav #drawer class="sidenav" fixedInViewport [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'" [mode]="(isHandset$ | async) ? 'over' : 'side'" [opened]="(isHandset$ | async) === false">
+        <mat-toolbar> COVID-19 &nbsp;&nbsp; <img src="../assets/img/distancia.png" alt="oms" width="55px"> </mat-toolbar>
+        <mat-nav-list>
+            <a mat-list-item routerLink="/home"><img src="../assets/img/flechita.png">Home</a>
+            <a mat-list-item routerLink="/portafolio"><img src="../assets/img/flechita.png">Portafolio</a>
+            <a mat-list-item routerLink="/servicio"><img src="../assets/img/flechita.png">Servicio</a>
+            <a mat-list-item routerLink="/partners"><img src="../assets/img/flechita.png">Partners</a>
+            <a mat-list-item routerLink="/contacto"><img src="../assets/img/flechita.png">Contacto</a>
+            <a mat-list-item routerLink="/juego"><img src="../assets/img/flechita.png">Juego</a>
+        </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <mat-toolbar>
+            <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()" *ngIf="isHandset$ | async">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+            <span></span>
+        </mat-toolbar>
+        <!-- Add Content Here -->
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+</mat-sidenav-container>

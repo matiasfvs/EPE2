@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head></head>
+
+<body>
+    <header>
+        <img src="../assets/img/principal.jpg" alt="imagen" width="100%" height="340px">
+    </header>
+    <hr>
+
+    <h1>Juego gato</h1>
+    <h2>Para distracción de casos COVID-19</h2>
+
+    <br>
+    <div style="text-align:center;">
+        <button mat-raised-button (click)="presion(0,0)" class="casilla">{{posiciones[0][0]}}</button>
+        <button mat-raised-button (click)="presion(0,1)" class="casilla">{{posiciones[0][1]}}</button>
+        <button mat-raised-button (click)="presion(0,2)" class="casilla">{{posiciones[0][2]}}</button>
+        <br>
+        <button mat-raised-button (click)="presion(1,0)" class="casilla">{{posiciones[1][0]}}</button>
+        <button mat-raised-button (click)="presion(1,1)" class="casilla">{{posiciones[1][1]}}</button>
+        <button mat-raised-button (click)="presion(1,2)" class="casilla">{{posiciones[1][2]}}</button>
+        <br>
+        <button mat-raised-button (click)="presion(2,0)" class="casilla">{{posiciones[2][0]}}</button>
+        <button mat-raised-button (click)="presion(2,1)" class="casilla">{{posiciones[2][1]}}</button>
+        <button mat-raised-button (click)="presion(2,2)" class="casilla">{{posiciones[2][2]}}</button>
+        <br> <br>
+        <button mat-button color="primary" (click)="reiniciar()">Reiniciar</button>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+    <div id="end">
+        <a routerLink="/home">Home</a>&nbsp;&nbsp;
+        <a routerLink="/portafolio">Portafolio</a>&nbsp;&nbsp;
+        <a routerLink="/servicio">Servicio</a>&nbsp;&nbsp;
+        <a routerLink="/partners">Partners</a>&nbsp;&nbsp;
+        <a routerLink="/contacto">Contacto</a>&nbsp;&nbsp;
+        <a routerLink="/juego">Juego</a>&nbsp;&nbsp;
+
+    </div>
+    <br>
+    <footer>
+        &copy; Copyright 2020 Company. Derechos reservados
+
+    </footer>
+</body>
+
+</html>

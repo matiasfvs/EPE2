@@ -1,0 +1,126 @@
+body {
+    background: white;
+}
+
+header {
+    display: contents;
+}
+
+hr {
+    height: 10px;
+    width: 100%;
+    background-color: black;
+}
+
+h1 {
+    font-size: 25px;
+    font-family: Calibri;
+    margin-left: 5px;
+    font-weight: bold;
+}
+
+h4 {
+    font-size: 18px;
+    font-family: Calibri;
+    width: 100%;
+    font-weight: bold;
+    margin-left: 15px;
+    margin-bottom: 0px;
+}
+
+p {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 15px;
+    font-family: Calibri;
+    text-align: justify;
+}
+
+#main {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row;
+    flex-flow: row;
+    width: 100%;
+}
+
+#main>article {
+    order: 2;
+}
+
+#main>nav {
+    margin-left: 15px;
+    order: 1;
+}
+
+#form {
+    width: 50%;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: Calibri;
+}
+
+#form>ul {
+    margin-left: 15px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#form>li {
+    height: 19px;
+    padding-left: 10px;
+    font-family: Calibri;
+    font-size: 15px;
+    margin-left: 15px;
+}
+
+#form>label {
+    margin-right: 50px;
+}
+
+#end {
+    margin-left: 15px;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    width: 100%;
+    font-family: Calibri;
+    font-size: 10px;
+}
+
+#main2 {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row;
+    flex-flow: row;
+    width: 100%;
+}
+
+#main2>label {
+    order: 1;
+    width: 30%
+}
+
+#main2>input {
+    margin-left: 15px;
+    order: 2;
+    width: 50%;
+}
+
+#main2>textarea {
+    margin-left: 15px;
+    order: 2;
+    width: 50%;
+}
+
+#form>button {
+    background-color: rgb(223, 71, 16);
+    border-radius: 25px;
+    color: white;
+    box-shadow: 5px 5px 5px #999;
+    font-family: Calibri;
+    font-size: 14px;
+}
